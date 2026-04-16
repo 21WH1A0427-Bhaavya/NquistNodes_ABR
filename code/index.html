@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CN Team NquistNodes - ABR Streaming</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ABR Streaming Demo</h1>
+      <div class="status">
+        <span id="currentBitrate">240p</span> | 
+        <span id="bufferTime">0s</span> | 
+        <span id="throughput">--</span>
+      </div>
+    </header>
+
+    <div class="player-section">
+      <video id="videoPlayer" controls autoplay muted width="640" height="360">
+        <source id="videoSource" src="240p/seg0.mp4" type="video/mp4">
+        Your browser doesn't support video playback
+      </video>
+      <div class="controls">
+        <button id="quality240">240p</button>
+        <button id="quality480">480p</button>
+        <button id="quality720">720p</button>
+      </div>
+    </div>
+
+    <div class="metrics">
+        <canvas id="bitrateChart" width="300" height="140"></canvas>
+        <canvas id="bufferChart" width="300" height="140"></canvas>
+        <canvas id="throughputChart" width="300" height="140"></canvas>
+    </div>
+    <div class="log-section">
+        <h3>Playback Metrics Log</h3>
+        <table id="metricsTable">
+            <thead>
+            <tr>
+                <th>Segment</th>
+                <th>Quality</th>
+                <th>Bitrate (kbps)</th>
+                <th>Throughput (kbps)</th>
+                <th>Buffer (s)</th>
+                <th>Decision</th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

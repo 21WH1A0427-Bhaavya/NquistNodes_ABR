@@ -1,0 +1,45 @@
+{
+  "segmentDuration": 4,
+  "totalSegments": 5,
+  "levels": [
+    {
+      "name": "240p",
+      "bitrate": 500,
+      "width": 426,
+      "height": 240,
+      "segments": [
+        "240p/seg0.mp4",
+        "240p/seg1.mp4",
+        "240p/seg2.mp4",
+        "240p/seg3.mp4",
+        "240p/seg4.mp4"
+      ]
+    },
+    {
+      "name": "480p",
+      "bitrate": 1500,
+      "width": 854,
+      "height": 480,
+      "segments": [
+        "480p/seg0.mp4",
+        "480p/seg1.mp4",
+        "480p/seg2.mp4",
+        "480p/seg3.mp4",
+        "480p/seg4.mp4"
+      ]
+    },
+    {
+      "name": "720p",
+      "bitrate": 3000,
+      "width": 1280,
+      "height": 720,
+      "segments": [
+        "720p/seg0.mp4",
+        "720p/seg1.mp4",
+        "720p/seg2.mp4",
+        "720p/seg3.mp4",
+        "720p/seg4.mp4"
+      ]
+    }
+  ]
+}
